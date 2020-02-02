@@ -1,0 +1,65 @@
+.car-card{
+  margin: 16px;
+  min-width: 22%;
+  max-width: 300px;
+  height: 480px;
+  background-color: #fffdff;
+  flex: 1 1 auto;
+  .pictures {
+    height: 55%;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+   .slick-prev {
+    left: 15px;
+    z-index: 1;
+  }
+   .slick-next {
+    right: 15px;
+    z-index: 1;
+  }
+  .slick-next::before{
+    content: '';
+    border: solid #ddd1c4;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+  }
+  .slick-prev::before{
+    content: '';
+    border: solid #ddd1c4;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(135deg);
+  }
+
+  .car-info{
+    margin: 0 16px;
+    color: #504644;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+      font-weight: normal;
+    }
+    p{
+        margin: 4px 0;
+    }
+    span{
+      width: 100%;
+      background-color: #f2f0f2;
+      border-radius: 10px;
+      margin-top: 24px;
+      p{
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.cars-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-car{
+  background-color: #0078fc;
+  border: none;
+  color: white;
+  margin: 16px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  &:hover{
+      background-color: #2366aa;
+  }
+  p{
+    margin: 0;
+    font-size: 18px;
+  }
+}
